@@ -2,6 +2,8 @@
     include 'head.php';
 ?>
 
+<!-- add commit -->
+
 <?php
     $link = mysqli_connect('localhost', 'root', '', 'mymoscow');    
     mysqli_set_charset($link, "utf8");
