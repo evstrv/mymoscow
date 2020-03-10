@@ -49,7 +49,24 @@
                                     <input type="checkbox" value="<?=$cell?>" id="<?="row_$id"?>" name="del[]">
                                 <?php endif;?>
                                 <label for="<?="row_$id"?>">
-                                    <?=$cell?>
+                                    <?php if($key === 'id'):?>
+                                        <?=$cell?>
+                                    <?php endif;?>
+                                    <?php if($key === 'fio'):?>
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$fio"?>" name="">
+                                    <?php endif;?>
+                                    <?php if($key === 'email'):?>
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$email"?>" name="">
+                                    <?php endif;?>
+                                    <?php if($key === 'tel'):?>
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$tel"?>" name="">
+                                    <?php endif;?>
+                                    <?php if($key === 'message'):?>
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$message"?>" name="">
+                                    <?php endif;?>
+                                    <?php if($key === 'reaction'):?>
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$reaction"?>" name="">
+                                    <?php endif;?>
                                 </label>
                             </td>
                         <?php endforeach;?>
