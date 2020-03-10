@@ -41,6 +41,12 @@ div.request {
                         }
                     }
                 }
+
+                > button {
+                    padding: 5px;
+                    border: 1px solid black;
+                    background: none;
+                }
             }
 
             tr {

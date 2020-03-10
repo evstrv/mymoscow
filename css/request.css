@@ -35,10 +35,17 @@ div.request > form > table td > label > input {
   border: none;
   font-size: 1rem;
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
 }
 
 div.request > form > table td > label > input:focus {
   outline: none;
+}
+
+div.request > form > table td > button {
+  padding: 5px;
+  border: 1px solid black;
+  background: none;
 }
 
 div.request > form > table tr.checked {

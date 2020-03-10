@@ -6,8 +6,8 @@
     $link = mysqli_connect('localhost', 'root', '', 'mymoscow');    
     mysqli_set_charset($link, "utf8");
 
-    if(!empty($_GET) && !empty($_GET['del'])) {
-        $query = "DELETE FROM form WHERE id IN(" . implode(',', $_GET['del']) . ")";
+    if(!empty($_GET) && !empty($_GET['select'])) {
+        $query = "DELETE FROM form WHERE id IN(" . implode(',', $_GET['select']) . ")";
 
         $res = mysqli_query($link, $query);
 
@@ -46,7 +46,7 @@
                         <?php foreach($row as $key=>$cell):?>
                             <td>
                                 <?php if($key === 'id'):?>
-                                    <input type="checkbox" value="<?=$cell?>" id="<?="row_$id"?>" name="del[]">
+                                    <input type="checkbox" value="<?=$cell?>" id="<?="row_$id"?>" name="select[]">
                                 <?php endif;?>
                                 <label for="<?="row_$id"?>">
                                     <?php if($key === 'id'):?>
@@ -70,11 +70,14 @@
                                 </label>
                             </td>
                         <?php endforeach;?>
+                        <td>
+                            <button>Up</button>
+                        </td>
                     </tr>
                 <?php endforeach;?>
             </tbody>
         </table>
-        <input type="submit" value="Удалить">
+        <input type="submit" value="Del">
     </form>
 </div>
 

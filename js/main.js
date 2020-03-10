@@ -25,5 +25,6 @@ for (let i = 0; i < radio.length; i++) {
 for (let el of document.querySelectorAll('div.request table td label')) {
     el.addEventListener('click', function () {
         this.parentElement.parentElement.classList.toggle('checked');
+        this.parentElement.parentElement.classList.toggle('show');
     });
 }
