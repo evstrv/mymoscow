@@ -53,19 +53,19 @@
                                         <?=$cell?>
                                     <?php endif;?>
                                     <?php if($key === 'fio'):?>
-                                        <input type="text" value="<?=$cell?>" id="<?="row_$fio"?>" name="">
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$fio"?>" name="fio">
                                     <?php endif;?>
                                     <?php if($key === 'email'):?>
-                                        <input type="text" value="<?=$cell?>" id="<?="row_$email"?>" name="">
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$email"?>" name="email">
                                     <?php endif;?>
                                     <?php if($key === 'tel'):?>
-                                        <input type="text" value="<?=$cell?>" id="<?="row_$tel"?>" name="">
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$tel"?>" name="tel">
                                     <?php endif;?>
                                     <?php if($key === 'message'):?>
-                                        <input type="text" value="<?=$cell?>" id="<?="row_$message"?>" name="">
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$message"?>" name="message">
                                     <?php endif;?>
                                     <?php if($key === 'reaction'):?>
-                                        <input type="text" value="<?=$cell?>" id="<?="row_$reaction"?>" name="">
+                                        <input type="text" value="<?=$cell?>" id="<?="row_$reaction"?>" name="reaction">
                                     <?php endif;?>
                                 </label>
                             </td>
@@ -80,9 +80,6 @@
         </table>
         <!-- <input type="submit" value="Del"> -->
     </form>
-    <?php
-        // echo "hi";
-    ?>
 </div>
 
 <?php
