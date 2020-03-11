@@ -80,6 +80,9 @@
         </table>
         <!-- <input type="submit" value="Del"> -->
     </form>
+    <?php
+        // echo "hi";
+    ?>
 </div>
 
 <?php

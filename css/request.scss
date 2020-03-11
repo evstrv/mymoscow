@@ -2,35 +2,36 @@ div.request {
     max-width: 1200px;
     margin: 2rem auto;
 
-    > h1 {
+    >h1 {
         text-align: center;
         margin-bottom: 1rem;
     }
 
-    > form {
-        > table {
+    >form {
+        >table {
             border-collapse: collapse;
             width: 100%;
-    
-            th, td {
+
+            th,
+            td {
                 border: 1px solid black;
                 text-align: center;
             }
-    
+
             th {
                 font-size: 1.3rem;
             }
 
             td {
-                > input[type=checkbox] {
+                >input[type=checkbox] {
                     display: none;
                 }
 
-                > label {
+                >label {
                     display: block;
                     padding: 10px 0;
 
-                    > input {
+                    >input {
                         border: none;
                         border-radius: 2px;
                         font-size: 1rem;
@@ -43,7 +44,7 @@ div.request {
                     }
                 }
 
-                > button {
+                >button {
                     width: 35px;
                     padding: 5px;
                     border: 1px solid black;
@@ -57,9 +58,9 @@ div.request {
                     background-color: rgb(253, 226, 105);
                 }
             }
-        } 
+        }
 
-        > input {
+        >input {
             margin: 1rem 1rem 0 0;
             padding: 5px 10px;
             border: 1px solid black;
