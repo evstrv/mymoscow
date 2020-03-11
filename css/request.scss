@@ -24,7 +24,7 @@ div.request {
             td {
                 > input[type=checkbox] {
                     display: none;
-                }   
+                }
 
                 > label {
                     display: block;
@@ -32,20 +32,23 @@ div.request {
 
                     > input {
                         border: none;
+                        border-radius: 2px;
                         font-size: 1rem;
                         font-family: 'Roboto Condensed', sans-serif;
                         text-align: center;
 
-                        &:focus {
-                            outline: none;
-                        }
+                        // &:focus {
+                        //     outline: none;
+                        // }
                     }
                 }
 
                 > button {
+                    width: 35px;
                     padding: 5px;
                     border: 1px solid black;
                     background: none;
+                    background-color: white;
                 }
             }
 
