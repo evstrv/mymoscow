@@ -70,15 +70,14 @@
                                 </label>
                             </td>
                         <?php endforeach;?>
-                        <td class="btns">
-                            <!-- <button>Up</button> -->
+                        <!-- <td class="btns">
                             <button>Del</button>
-                        </td>
+                        </td> -->
                     </tr>
                 <?php endforeach;?>
             </tbody>
         </table>
-        <!-- <input type="submit" value="Del"> -->
+        <input type="submit" value="Del">
     </form>
 </div>
 
