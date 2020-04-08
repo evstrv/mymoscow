@@ -1,5 +1,5 @@
 div.request {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 2rem auto;
 
     >h1 {
@@ -51,11 +51,22 @@ div.request {
                     background: none;
                     background-color: white;
                 }
+                
+                &.btns {
+                    display: none;
+                    position: absolute;
+                }
             }
 
             tr {
                 &.checked {
                     background-color: rgb(253, 226, 105);
+                }
+
+                &:hover .btns {
+                    display: block;
+                    padding: 6px;
+                    border-left: none;
                 }
             }
         }
