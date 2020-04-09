@@ -27,5 +27,3 @@ for (let el of document.querySelectorAll('div.request table td label')) {
         this.parentElement.parentElement.classList.toggle('checked');
     });
 }
-
-// commit add

@@ -148,7 +148,7 @@ header > div.menu_mobile {
   left: 60%;
   right: 0;
   position: fixed;
-  background: rgba(112, 157, 202, 0.97);
+  background: rgba(112, 157, 202, 0.8);
   border-bottom-left-radius: 10px;
 }
 
