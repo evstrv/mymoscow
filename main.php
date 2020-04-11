@@ -6,10 +6,10 @@
                     <img src="images/top.jpg" alt="top">
                 </div>
                 <div class="slider-item">
-                    <img src="images/4.jpg" alt="top">
+                    <img src="images/top-2.jpg" alt="top">
                 </div>
                 <div class="slider-item">
-                    <img src="images/5.jpg" alt="top">
+                    <img src="images/top-3.jpg" alt="top">
                 </div>
             </div>
             <div class="blackout"></div>
