@@ -1,6 +1,17 @@
 <main>
         <section class="slider">
-            <img src="images/top.jpg" alt="top">
+            <!-- <img src="images/top.jpg" alt="top"> -->
+            <div class="slider-items">
+                <div class="slider-item show">
+                    <img src="images/top.jpg" alt="top">
+                </div>
+                <div class="slider-item">
+                    <img src="images/4.jpg" alt="top">
+                </div>
+                <div class="slider-item">
+                    <img src="images/5.jpg" alt="top">
+                </div>
+            </div>
             <div class="blackout"></div>
             <div class="arrow left"></div>
             <div class="title">
@@ -10,7 +21,7 @@
             <button>Подробнее о нас</button>
             <div class="arrow right"></div>
             <div class="circles_box">
-                <div></div>
+                <div class="checked"></div>
                 <div></div>
                 <div></div>
             </div>
