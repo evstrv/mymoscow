@@ -365,10 +365,18 @@ main > section.slider > div.circles_box > div:not(:last-child) {
   margin-right: 30px;
 }
 
-main > section.slider > div.circles_box > div.checked {
-  width: 12px;
-  height: 12px;
-  border: 3px solid #709dca;
+main > section.slider > div.circles_box > div.checked:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  left: -7px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 main > section.offers {
