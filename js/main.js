@@ -20,12 +20,14 @@ for (let el of document.getElementsByClassName('arrow')) {
                 slides[count].style.display = 'none';
                 dots[count].classList.toggle('checked');
                 count = 2;
+                slides[count].style.animation = 'scale 1.5s ease-in-out';
                 slides[count].style.display = 'block';
                 dots[count].classList.toggle('checked');
             } else {
                 slides[count].style.display = 'none';
                 dots[count].classList.toggle('checked');
                 slides[count-1].style.display = 'block';
+                slides[count-1].style.animation = 'scale 1.5s ease-in-out';
                 dots[count-1].classList.toggle('checked');
                 count--;
             }
@@ -34,12 +36,14 @@ for (let el of document.getElementsByClassName('arrow')) {
                 slides[count].style.display = 'none';
                 dots[count].classList.toggle('checked');
                 count = 0;
+                slides[count].style.animation = 'scale 1.5s ease-in-out';
                 slides[count].style.display = 'block';
                 dots[count].classList.toggle('checked');
             } else {
                 slides[count].style.display = 'none';
                 dots[count].classList.toggle('checked');
                 slides[count+1].style.display = 'block';
+                slides[count+1].style.animation = 'scale 1.5s ease-in-out';
                 dots[count+1].classList.toggle('checked');
                 count++;
             }

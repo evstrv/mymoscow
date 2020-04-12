@@ -200,19 +200,43 @@ main > section.slider > button {
   text-transform: uppercase;
 }
 
+main > section.slider > div.slider-items {
+  overflow: hidden;
+}
+
 main > section.slider > div.slider-items > img {
   width: 100%;
   height: 100vh;
-  -webkit-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
 }
 
 main > section.slider > div.slider-items > img:not(:first-child) {
   display: none;
 }
 
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 main > section.slider > div.blackout {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.55);
   width: 100%;
   height: 100vh;
   position: absolute;

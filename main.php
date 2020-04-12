@@ -1,9 +1,8 @@
 <main>
         <section class="slider">
-            <!-- <img src="images/top.jpg" alt="top"> -->
             <div class="slider-items">
                 <img src="images/top.jpg" alt="top">
-                <img src="images/top-2.jpg" alt="top">          
+                <img src="images/top-2.jpg" alt="top">
                 <img src="images/top-3.jpg" alt="top">
             </div>
             <div class="blackout"></div>
