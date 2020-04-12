@@ -2,15 +2,9 @@
         <section class="slider">
             <!-- <img src="images/top.jpg" alt="top"> -->
             <div class="slider-items">
-                <div class="slider-item show">
-                    <img src="images/top.jpg" alt="top">
-                </div>
-                <div class="slider-item">
-                    <img src="images/top-2.jpg" alt="top">
-                </div>
-                <div class="slider-item">
-                    <img src="images/top-3.jpg" alt="top">
-                </div>
+                <img src="images/top.jpg" alt="top">
+                <img src="images/top-2.jpg" alt="top">          
+                <img src="images/top-3.jpg" alt="top">
             </div>
             <div class="blackout"></div>
             <div class="arrow left"></div>

@@ -10,37 +10,37 @@ $('.burger').click(function () {
     }
 });
 
-let slides = document.getElementsByClassName('slider-item');
+let slides = document.querySelectorAll('.slider-items > img');
 let dots = document.querySelectorAll('.circles_box > div');
 let count = 0;
 for (let el of document.getElementsByClassName('arrow')) {
     el.addEventListener('click', function () {
         if (this.classList.contains('left')) {
             if (count === 0) {
-                slides[count].classList.toggle('show');
-                dots[count].classList.toggle('checked')
+                slides[count].style.display = 'none';
+                dots[count].classList.toggle('checked');
                 count = 2;
-                slides[count].classList.toggle('show');
-                dots[count].classList.toggle('checked')
+                slides[count].style.display = 'block';
+                dots[count].classList.toggle('checked');
             } else {
-                slides[count].classList.toggle('show');
-                dots[count].classList.toggle('checked')
-                slides[count-1].classList.toggle('show');
-                dots[count-1].classList.toggle('checked')
+                slides[count].style.display = 'none';
+                dots[count].classList.toggle('checked');
+                slides[count-1].style.display = 'block';
+                dots[count-1].classList.toggle('checked');
                 count--;
             }
         } else if (this.classList.contains('right')) {
             if (count === 2) {
-                slides[count].classList.toggle('show');
-                dots[count].classList.toggle('checked')
+                slides[count].style.display = 'none';
+                dots[count].classList.toggle('checked');
                 count = 0;
-                slides[count].classList.toggle('show');
-                dots[count].classList.toggle('checked')
+                slides[count].style.display = 'block';
+                dots[count].classList.toggle('checked');
             } else {
-                slides[count].classList.toggle('show');
-                dots[count].classList.toggle('checked')
-                slides[count+1].classList.toggle('show');
-                dots[count+1].classList.toggle('checked')
+                slides[count].style.display = 'none';
+                dots[count].classList.toggle('checked');
+                slides[count+1].style.display = 'block';
+                dots[count+1].classList.toggle('checked');
                 count++;
             }
         }
