@@ -219,6 +219,31 @@ main {
                             animation: scale 1.5s ease-out;
                         }
                     }
+
+                    // > svg {
+                    //     width: calc(100vw - 17px);
+                    //     height: 100vh;
+                    //     position: absolute;
+                    //     transition: opacity 3s;
+
+                    //     &:first-child {
+                    //         z-index: 3;
+                    //     }
+
+                    //     &:nth-child(2) {
+                    //         opacity: 0;
+                    //         z-index: 2;
+                    //     }
+
+                    //     &:last-child {
+                    //         opacity: 0;
+                    //         z-index: 1;
+                    //     }
+
+                    //     &.scale {
+                    //         animation: scale 1.5s ease-out;
+                    //     }
+                    // }
                 }
 
                 @keyframes scale {

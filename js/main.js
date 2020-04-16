@@ -11,6 +11,7 @@ $('.burger').click(function () {
 });
 
 let slides = document.querySelectorAll('.slider-items > img');
+// let slides = document.querySelectorAll('.slider-items > svg');
 let dots = document.querySelectorAll('.circles_box > div');
 let count = 0;
 for (let el of document.getElementsByClassName('arrow')) {
