@@ -27,7 +27,7 @@ header {
   left: 0;
   right: 0;
   padding: 15px 10px;
-  z-index: 2;
+  z-index: 10000;
 }
 
 header > .logo {
@@ -187,6 +187,7 @@ main > section.slider {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  min-height: 100vh;
 }
 
 main > section.slider > button {
@@ -198,25 +199,47 @@ main > section.slider > button {
   color: white;
   font-size: .95rem;
   text-transform: uppercase;
+  z-index: 1000;
 }
 
 main > section.slider > div.slider-items {
-  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
 }
 
 main > section.slider > div.slider-items > img {
-  width: 100%;
+  width: calc(100vw - 17px);
   height: 100vh;
+  position: absolute;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
 }
 
-main > section.slider > div.slider-items > img:not(:first-child) {
-  display: none;
+main > section.slider > div.slider-items > img:first-child {
+  z-index: 3;
+}
+
+main > section.slider > div.slider-items > img:nth-child(2) {
+  opacity: 0;
+  z-index: 2;
+}
+
+main > section.slider > div.slider-items > img:last-child {
+  opacity: 0;
+  z-index: 1;
+}
+
+main > section.slider > div.slider-items > img.scale {
+  -webkit-animation: scale 1.5s ease-out;
+          animation: scale 1.5s ease-out;
 }
 
 @-webkit-keyframes scale {
   0% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
   }
   100% {
     -webkit-transform: scale(1);
@@ -226,8 +249,8 @@ main > section.slider > div.slider-items > img:not(:first-child) {
 
 @keyframes scale {
   0% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
   }
   100% {
     -webkit-transform: scale(1);
@@ -237,17 +260,19 @@ main > section.slider > div.slider-items > img:not(:first-child) {
 
 main > section.slider > div.blackout {
   background: rgba(0, 0, 0, 0.55);
-  width: 100%;
+  width: calc(100vw - 17px);
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 main > section.slider > div.title {
   position: absolute;
   color: white;
   text-align: center;
+  z-index: 1000;
 }
 
 main > section.slider > div.title > h2 {
@@ -277,6 +302,7 @@ main > section.slider > div.arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1000;
 }
 
 main > section.slider > div.arrow:hover {
@@ -373,6 +399,7 @@ main > section.slider > div.circles_box {
           align-items: center;
   position: absolute;
   bottom: 12.5%;
+  z-index: 1000;
 }
 
 main > section.slider > div.circles_box > div {

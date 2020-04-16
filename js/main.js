@@ -17,34 +17,66 @@ for (let el of document.getElementsByClassName('arrow')) {
     el.addEventListener('click', function () {
         if (this.classList.contains('left')) {
             if (count === 0) {
-                slides[count].style.display = 'none';
+                // slides[count].style.display = 'none';
+                // dots[count].classList.toggle('checked');
+                // count = 2;
+                // slides[count].style.animation = 'scale 1.5s ease-in-out';
+                // slides[count].style.display = 'block';
+                // dots[count].classList.toggle('checked');
+
                 dots[count].classList.toggle('checked');
+                slides[count].style.opacity = 0;
+                slides[count].classList.remove('scale');
                 count = 2;
-                slides[count].style.animation = 'scale 1.5s ease-in-out';
-                slides[count].style.display = 'block';
                 dots[count].classList.toggle('checked');
+                slides[count].style.opacity = 1;
+                slides[count].classList.toggle('scale');
             } else {
-                slides[count].style.display = 'none';
+                // slides[count].style.display = 'none';
+                // dots[count].classList.toggle('checked');
+                // slides[count-1].style.display = 'block';
+                // slides[count-1].style.animation = 'scale 1.5s ease-in-out';
+                // dots[count-1].classList.toggle('checked');
+                // count--;
+
                 dots[count].classList.toggle('checked');
-                slides[count-1].style.display = 'block';
-                slides[count-1].style.animation = 'scale 1.5s ease-in-out';
+                slides[count].style.opacity = 0;
+                slides[count].classList.remove('scale');
                 dots[count-1].classList.toggle('checked');
+                slides[count-1].style.opacity = 1;
+                slides[count-1].classList.toggle('scale');
                 count--;
             }
         } else if (this.classList.contains('right')) {
             if (count === 2) {
-                slides[count].style.display = 'none';
+                // slides[count].style.display = 'none';
+                // dots[count].classList.toggle('checked');
+                // count = 0;
+                // slides[count].style.animation = 'scale 1.5s ease-in-out';
+                // slides[count].style.display = 'block';
+                // dots[count].classList.toggle('checked');
+                
                 dots[count].classList.toggle('checked');
+                slides[count].style.opacity = 0;
+                slides[count].classList.remove('scale');
                 count = 0;
-                slides[count].style.animation = 'scale 1.5s ease-in-out';
-                slides[count].style.display = 'block';
                 dots[count].classList.toggle('checked');
+                slides[count].style.opacity = 1;
+                slides[count].classList.toggle('scale');
             } else {
-                slides[count].style.display = 'none';
+                // slides[count].style.display = 'none';
+                // dots[count].classList.toggle('checked');
+                // slides[count+1].style.display = 'block';
+                // slides[count+1].style.animation = 'scale 1.5s ease-in-out';
+                // dots[count+1].classList.toggle('checked');
+                // count++;
+                
                 dots[count].classList.toggle('checked');
-                slides[count+1].style.display = 'block';
-                slides[count+1].style.animation = 'scale 1.5s ease-in-out';
+                slides[count].style.opacity = 0;
+                slides[count].classList.remove('scale');
                 dots[count+1].classList.toggle('checked');
+                slides[count+1].style.opacity = 1;
+                slides[count+1].classList.toggle('scale');
                 count++;
             }
         }
