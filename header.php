@@ -5,11 +5,12 @@
             <span>MyMoscow</span>
         </div>
         <nav>
-            <a href="#">Главная</a>
+            <a href="index.php">Главная</a>
             <a href="#">Наши услуги</a>
             <a href="#">О компании</a>
             <a href="#">Контакты</a>
             <a href="#">Отзывы</a>
+            <a href="request.php">Заявки(!)</a>
         </nav>
         <div class="burger">
             <div></div>

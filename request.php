@@ -70,10 +70,10 @@
                                 </label>
                             </td>
                         <?php endforeach;?>
-                        <td class="btns">
+                        <!-- <td class="btns">
                             <button>Del</button>
                             <button>Upd</button>
-                        </td>
+                        </td> -->
                     </tr>
                 <?php endforeach;?>
             </tbody>
